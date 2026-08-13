@@ -41,5 +41,23 @@ let employee = {
 let hisName = employee.name
 let hisRole = employee.role
 //with destructuring
-const {name, role, salary, city} = employee
+const {name:userName, role, salary, city} = employee
 console.log(employee)
+
+//spread and rest operators
+let DNA = {
+    gender: "XY",
+    complexion: "DARK",
+}
+
+let offspring = {
+    ...DNA,
+   name: "adegboyega adeyemi",
+   age: 30
+}
+console.log(offspring)
+
+//iterating over objects
+console.log(Object.keys(offspring))
+console.log(Object.values(offspring))
+console.log(Object.entries(offspring))
